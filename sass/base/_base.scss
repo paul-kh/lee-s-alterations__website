@@ -8,6 +8,10 @@
   box-sizing: inherit; // Make all interitable components to inherit box sizing of their parent component
 }
 
+html {
+  scroll-behavior: smooth; // Make anchor link smooth whne user navigate via Nav links
+}
+
 body {
   // root reset
   color: $color-black;
