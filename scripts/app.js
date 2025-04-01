@@ -97,3 +97,19 @@ storeLocationEls.forEach((el) => {
         `;
   });
 });
+
+/****************************************************/
+/****** Handling Active Nav Link                  ***/
+/****************************************************/
+const linkEl = document.querySelectorAll(".nav-list-item");
+console.log(linkEl);
+
+linkEl.forEach((link) => {
+  link.addEventListener("click", () => {
+    // remove previously active link
+    document.querySelector(".link--active").classList.remove("link--active");
+
+    // add "link--active" class to newly selected link
+    link.classList.add("link--active");
+  });
+});
