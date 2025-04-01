@@ -1,0 +1,15 @@
+{
+  "name": "Lee's Alterations",
+  "version": "1.0.0",
+  "description": "Landing page for Lee's Alterations Webstie",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Paul Chheang",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,11 @@
+.section-services {
+  background-color: $color-white-dark;
+  color: $color-white-light;
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+  }
+}

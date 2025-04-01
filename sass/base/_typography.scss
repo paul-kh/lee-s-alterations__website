@@ -1,0 +1,23 @@
+body {
+  // root reset
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+  font-size: 75%; /* set default font size to 12px instead of original default font-size of 16px; 75% = 112px/16px */
+  line-height: 1.7; /* 1.7 x default line height*/
+}
+
+.heading--primary {
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.heading--secondary {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.heading--tertiary {
+  font-weight: 700;
+  font-size: 1rem;
+}

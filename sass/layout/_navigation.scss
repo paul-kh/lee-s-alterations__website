@@ -1,0 +1,45 @@
+.top__navbar {
+  background-color: $color-black;
+  min-height: $navbar-height;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  .top__nav-container {
+    max-width: $navbar-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-logo-box .logo {
+      height: $logo-height;
+    }
+    .top__nav-box {
+    }
+
+    .top__nav-list {
+      list-style: none;
+      text-transform: uppercase;
+      > :last-child {
+        padding-right: 0px;
+      }
+    }
+
+    .nav-link {
+      color: $color-white-light;
+      text-decoration: none;
+      margin-left: 1rem;
+      padding: 4px;
+      border-radius: 2px;
+    }
+    .nav-link:hover,
+    .active {
+      background-color: $color-purple;
+    }
+  }
+
+  // make logo box and nav-box use all the available space of the parent top__nav-container
+  & > * {
+    flex-grow: 1;
+  }
+}

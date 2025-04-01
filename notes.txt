@@ -1,0 +1,16 @@
+Lee Alterations - Website Project
+
+Main website address: https://leesalterationsjax.net/
+Color pallet: 
+- Pink: #D86C97
+- Light Pink: #f7dede
+- Black: #282828
+- Gray 1:  #333333
+- Gray 2: #4d4d4d
+- Gray 3: #646464
+- White 1: #ffffff
+- White 2:#F6F2EF
+- Purple: #9b51e0
+
+Font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+

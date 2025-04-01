@@ -1,0 +1,46 @@
+.card {
+  min-width: 20rem;
+  min-height: 41rem;
+  margin: 1rem;
+  background-color: $color-white-light;
+  object-fit: cover;
+  border-radius: 2px;
+  border: none;
+  position: relative;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba($color-grey-dark, 0.5);
+
+  &:hover {
+    transform: translateY(-4px);
+    transition: 250ms transform;
+    box-shadow: 2px 2px 10px rgba($color-grey-dark, 0.95);
+  }
+
+  .card-text-box {
+    padding: 1rem;
+    position: absolute;
+    top: 23rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .picture {
+    height: 23rem;
+    background-size: cover;
+
+    &-1 {
+      background-image: url(../assets/images/measuring-2923809_1280.jpg);
+    }
+    &-2 {
+      background-image: url(../assets/images/bridal.jpg);
+    }
+    &-3 {
+      background-image: url(../assets/images/blazer.jpg);
+    }
+    &-4 {
+      background-image: url(../assets/images/bedding.jpg);
+    }
+  }
+}

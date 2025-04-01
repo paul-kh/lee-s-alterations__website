@@ -1,0 +1,46 @@
+.section-locations {
+  background-color: $color-white-dark;
+
+  .locations__container {
+    display: flex;
+    flex-direction: column;
+
+    .locations__list-view {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .location__list {
+        list-style: none;
+        text-align: center;
+      }
+
+      .location {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: $color-grey-dark;
+
+        &--selected {
+          background-color: $color-purple;
+        }
+      }
+    }
+
+    .location__map-view {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      iframe {
+        width: 45rem;
+        height: 35rem;
+        border-radius: 10px;
+      }
+
+      img {
+        border-radius: 10px;
+        max-height: 35rem;
+      }
+    }
+  }
+}

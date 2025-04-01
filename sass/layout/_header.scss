@@ -1,0 +1,22 @@
+.header {
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text-box {
+    position: absolute;
+    top: 25%;
+    background-color: rgba($color-purple, 0.9);
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px rgba($color-grey-light, 0.9);
+  }
+
+  &__image-box {
+    width: 100%;
+    img {
+      height: 6rem;
+      padding: 6px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.section-galleries {
+  background-color: $color-grey-light;
+  color: $color-white-light;
+
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#gallery {
+  display: grid;
+  // 'auto-fit' to let items fit as many as they can, and with min of 320px
+  // and max of 1fr
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 10px;
+}
+
+.gallery-image {
+  max-width: 20rem;
+  height: 30rem;
+  border-radius: 10px;
+  position: relative;
+  transition: 250ms;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 10px $color-black;
+  }
+}
+
+#modal-popup {
+  padding: 50px;
+
+  // set modal to cover entire page
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-black;
+
+  // center image in the modal
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Initially, hide modal all the way to top
+  transform: translateY(-100%);
+  transition: 250ms transform;
+}
+
+#selectedImg {
+  max-height: 100%;
+}
