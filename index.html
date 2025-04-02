@@ -223,29 +223,53 @@
         id="section-contact"
         class="section-contact pl-1 pr-1 pt-4 pb-4 text-center"
       >
-        <h2 class="heading--primary">Contact</h2>
-        <div class="contact__form">
-          <form action="#">
-            <div class="form-input-group">
-              <label for="first-name" class="form-input-label"
-                >First Name</label
-              >
-              <input type="text" id="first-name" class="form-input" />
-            </div>
-            <div class="form-input-group">
-              <label for="last-name" class="form-input-label">Last Name</label>
-              <input type="text" id="last-name" class="form-input" />
-            </div>
-            <div class="form-input-group">
-              <label for="email" class="form-input-label">Email</label>
-              <input type="text" id="email" class="form-input" />
-            </div>
-            <div class="form-input-group">
-              <label for="phone" class="form-input-label">Phone Number</label>
-              <input type="text" id="phone" class="form-input" />
-            </div>
-            <input type="text" class="contact__input-group" />
-          </form>
+        <h2 class="heading--primary mb-4">Contact</h2>
+        <div class="book">
+          <div class="book__form">
+            <form class="form" method="POST" id="contact-form">
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  placeholder="Your name"
+                  required
+                />
+                <label class="form__label" for="name">Your Name</label>
+              </div>
+
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="form__input"
+                  id="email"
+                  placeholder="Your email"
+                  required
+                />
+                <label class="form__label" for="email">Your Email</label>
+              </div>
+
+              <div class="form__group">
+                <textarea
+                  name="message"
+                  class="form__input"
+                  id="message"
+                  placeholder="Your Message"
+                  cols="3"
+                  rows="10"
+                  required
+                ></textarea>
+
+                <label class="form__label" for="message">Your Message</label>
+              </div>
+
+              <div class="form__group">
+                <button type="submit" class="btn btn--green" value="submit">
+                  Send &rarr;
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>

@@ -209,7 +209,7 @@ body {
   justify-content: flex-start; }
 
 .sidebar li {
-  min-width: 100%;
+  min-width: 92%;
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -231,7 +231,7 @@ body {
   height: 95.5vh;
   background-image: url("../assets/images/jax-downtown--large.jpg");
   background-size: cover;
-  background-position: left;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -270,6 +270,7 @@ body {
     align-items: center; }
 
 #gallery {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -337,6 +338,27 @@ body {
 
 .section-contact {
   background-color: #f6f2ef; }
+  .section-contact .book {
+    background-image: linear-gradient(105deg, rgba(40, 40, 40, 0.8) 0%, rgba(40, 40, 40, 0.5) 50%, transparent 50%), url("../assets/images/jax-downtown--small.jpg");
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba(40, 40, 40, 0.5); }
+    @media (max-width: 75em) {
+      .section-contact .book {
+        background-image: linear-gradient(105deg, rgba(40, 40, 40, 0.8) 0%, rgba(40, 40, 40, 0.5) 65%, transparent 65%), url("../assets/images/jax-downtown--small.jpg");
+        background-size: cover; } }
+    @media (max-width: 56.25em) {
+      .section-contact .book {
+        background-image: linear-gradient(to right, rgba(40, 40, 40, 0.8) 0%, rgba(40, 40, 40, 0.8) 100%), url("../assets/images/jax-downtown--small.jpg"); } }
+    .section-contact .book__form {
+      width: 50%;
+      padding: 3rem 4rem 3rem 4rem; }
+      @media (max-width: 75em) {
+        .section-contact .book__form {
+          width: 65%; } }
+      @media (max-width: 56.25em) {
+        .section-contact .book__form {
+          width: 100%; } }
 
 .footer {
   height: 10vh;
@@ -393,6 +415,47 @@ body {
   .bg-video__content {
     object-fit: cover; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 0; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.2rem 1.8rem;
+  border: none;
+  border-radius: 2px;
+  background-color: rbga(#ffffff, 0.5);
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(40, 40, 40, 0.1);
+    border-bottom: 3px solid #9b51e0; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #f7dede; }
+  .form__input::-webkit-input-placeholder {
+    color: #333333; }
+
+.form__label {
+  display: block;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.2s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 @media (max-width: 1200px) {
   .heading--primary {
     font-weight: 800;
@@ -433,7 +496,17 @@ body {
   #sidebar__show-btn {
     display: block; }
   .topbar .on-mobile--hide {
-    display: none; } }
+    display: none; }
+  .location {
+    width: 100%; }
+    .location p {
+      font-size: 0.7rem; }
+  #map-container iframe {
+    min-width: 98%;
+    height: 20rem; }
+  #map-container img {
+    border-radius: 10px;
+    min-height: 35rem; } }
 
 @media (max-width: 450px) {
   .heading--primary {

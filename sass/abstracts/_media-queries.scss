@@ -67,6 +67,23 @@
   .topbar .on-mobile--hide {
     display: none;
   }
+  // Section Locations
+  .location {
+    width: 100%;
+    p {
+      font-size: 0.7rem;
+    }
+  }
+
+  #map-container iframe {
+    min-width: 98%;
+    height: 20rem;
+  }
+
+  #map-container img {
+    border-radius: 10px;
+    min-height: 35rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -97,6 +114,7 @@
   }
 
   //  Section-galleries
+
   .card {
     min-width: 100%;
     min-height: 27rem;
