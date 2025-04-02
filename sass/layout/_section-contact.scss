@@ -1,23 +1,24 @@
 .section-contact {
-  background-color: $color-white-dark;
+  background-color: $color-white-light;
 
   .book {
     background-image: linear-gradient(
         105deg,
-        (rgba($color-black, 0.8) 0%),
-        (rgba($color-black, 0.5) 50%),
+        (rgba($color-black, 0.4) 0%),
+        (rgba($color-black, 0.4) 50%),
         transparent 50%
       ),
-      url("../assets/images/jax-downtown--small.jpg");
+      url("../assets/images/jax-downtown--large.jpg");
     background-size: 100%;
+    background-position: right;
     border-radius: 3px;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
 
     @include respond(tab-land) {
       background-image: linear-gradient(
           105deg,
-          (rgba($color-black, 0.8) 0%),
-          (rgba($color-black, 0.5) 65%),
+          (rgba($color-black, 0.4) 0%),
+          (rgba($color-black, 0.4) 65%),
           transparent 65%
         ),
         url("../assets/images/jax-downtown--small.jpg");
@@ -27,8 +28,8 @@
     @include respond(tab-port) {
       background-image: linear-gradient(
           to right,
-          (rgba($color-black, 0.8) 0%),
-          (rgba($color-black, 0.8) 100%)
+          (rgba($color-black, 0.4) 0%),
+          (rgba($color-black, 0.4) 100%)
         ),
         url("../assets/images/jax-downtown--small.jpg");
     }
@@ -39,10 +40,12 @@
 
       @include respond(tab-land) {
         width: 65%;
+        padding: 2rem;
       }
 
       @include respond(tab-port) {
         width: 100%;
+        padding: 2rem;
       }
     }
   }

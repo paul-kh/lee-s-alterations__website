@@ -36,9 +36,6 @@
             <a href="#header"> Home</a>
           </li>
           <li class="nav-list-item">
-            <a href="#section-about" class="nav-link"> About</a>
-          </li>
-          <li class="nav-list-item">
             <a href="#section-services" class="nav-link"> Services</a>
           </li>
           <li class="nav-list-item">
@@ -64,9 +61,6 @@
           </li>
           <li class="nav-list-item on-mobile--hide">
             <a href="#header"> Home</a>
-          </li>
-          <li class="nav-list-item on-mobile--hide">
-            <a href="#section-about" class="nav-link"> About</a>
           </li>
           <li class="nav-list-item on-mobile--hide">
             <a href="#section-services" class="nav-link"> Services</a>
@@ -109,9 +103,11 @@
           <img src="./assets/images/scisor.png" alt="" />
         </div>
 
-        <button class="btn what-we-can-do__btn text-white mt-2">
-          What We Can Do
-        </button>
+        <a
+          href="#section-services"
+          class="btn btn--purple heading--secondary mt-2"
+          >What We Can Do</a
+        >
       </div>
     </header>
     <main class="container">
@@ -182,6 +178,11 @@
             </div>
           </div>
         </div>
+        <a
+          href="#section-locations"
+          class="btn btn--purple heading--tertiary mt-2 mb-2"
+          >Find Our Stores</a
+        >
       </section>
 
       <!-- GALERIES SECTION -->
@@ -197,6 +198,11 @@
             <img id="selectedImg" src="" alt="" />
           </div>
         </div>
+        <a
+          href="#section-locations"
+          class="btn btn--purple heading--tertiary mt-2 mb-2"
+          >Find Our Stores</a
+        >
       </section>
 
       <!-- LOCATIONS SECTION -->
@@ -216,17 +222,26 @@
             </div>
           </div>
         </div>
+        <a
+          href="#section-contact"
+          class="btn btn--purple heading--tertiary mt-4 mb-2"
+          >Questions for Us</a
+        >
       </section>
 
       <!-- CONTACT SECTION -->
       <section
         id="section-contact"
-        class="section-contact pl-1 pr-1 pt-4 pb-4 text-center"
+        class="section-contact pl-1 pr-1 pt-2 pb-2 mt-2 text-center"
       >
-        <h2 class="heading--primary mb-4">Contact</h2>
+        <h2 class="heading--primary mb-2">Contact</h2>
+        <h3 class="headering--tertiary mb-2">
+          We are more than happy to respond to your inquiry that you send to us
+          via the contact form below.
+        </h3>
         <div class="book">
           <div class="book__form">
-            <form class="form" method="POST" id="contact-form">
+            <form class="form pb-2 pt-2" method="POST" id="contact-form">
               <div class="form__group">
                 <input
                   type="text"
@@ -264,13 +279,16 @@
               </div>
 
               <div class="form__group">
-                <button type="submit" class="btn btn--green" value="submit">
+                <button type="submit" class="btn btn--white" value="submit">
                   Send &rarr;
                 </button>
               </div>
             </form>
           </div>
         </div>
+        <a href="#header" class="btn btn--purple heading--tertiary mt-4 mb-2"
+          >Home</a
+        >
       </section>
     </main>
 
