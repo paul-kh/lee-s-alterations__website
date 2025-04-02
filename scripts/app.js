@@ -111,5 +111,18 @@ linkEl.forEach((link) => {
 
     // add "link--active" class to newly selected link
     link.classList.add("link--active");
+    document.querySelector(".sidebar").style.display = "none";
   });
+});
+
+/****************************************************/
+/****** Handling Hide/Show Sidebar                ***/
+/****************************************************/
+const sidebarHideBtn = document.getElementById("sidebar__hide-btn");
+const sidebarShowBtn = document.getElementById("sidebar__show-btn");
+sidebarShowBtn.addEventListener("click", () => {
+  document.querySelector(".sidebar").style.display = "flex";
+});
+sidebarHideBtn.addEventListener("click", () => {
+  document.querySelector(".sidebar").style.display = "none";
 });

@@ -1,55 +1,105 @@
-.top__navbar {
+.nav__container {
   background-color: $color-black;
-  min-height: $navbar-height;
   position: sticky;
   top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  width: $navbar-width;
+  min-height: $navbar-height;
+  padding: 4px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav .topbar {
+  list-style: none;
+  display: flex;
+  min-width: 100%;
+}
+
+.nav ul li {
+  width: 7rem;
+  height: $navbar-height;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 1rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  height: 90%;
+  color: $color-white-light;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav ul li a:hover,
+.link--active {
+  background-color: $color-purple;
+  transform: translateY(-2px);
+  transition: 250ms transform;
+  box-shadow: 2px 2px 2px $color-pink-light;
+}
+
+.nav ul li a img {
+  max-height: $logo-height;
+  margin-left: 35px;
+}
+
+// move logo to left side
+.nav ul li:first-child {
+  margin-right: auto;
+  background-color: transparent;
+}
+.nav ul li:first-child a:hover {
+  background-color: transparent;
+  box-shadow: 0 0 0 transparent;
+}
+
+// Nav Sidebar for small screen
+.nav .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 25rem;
   z-index: 9999;
+  background-color: rgba($color-black, 0.7);
+  backdrop-filter: blur(10px); //block see through the background
+  box-shadow: -10px 0 10px $color-black;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
-  .top__nav-container {
-    max-width: $navbar-width;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.sidebar li {
+  min-width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .nav-logo-box .logo {
-      height: $logo-height;
-    }
-    .top__nav-box {
-    }
+.sidebar li:first-child a {
+  background-color: transparent;
+}
 
-    ul {
-      list-style: none;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      > :last-child {
-        padding-right: 0px;
-      }
-    }
-    ul li {
-      margin-left: 1rem;
-      min-height: $navbar-height;
-      border-radius: 2px;
-      width: 5rem;
-      margin: 0.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.topbar img:hover,
+.sidebar img:hover {
+  transform: translateY(-2px);
+  transition: 250ms transform;
+  box-shadow: 4px 4px 8px $color-black;
+}
 
-    a {
-      color: $color-white-light;
-      text-decoration: none;
-    }
-    ul li:hover,
-    .link--active {
-      background-color: $color-purple;
-    }
-  }
-
-  // make logo box and nav-box use all the available space of the parent top__nav-container
-  & > * {
-    flex-grow: 1;
-  }
+#sidebar__show-btn {
+  display: none;
 }

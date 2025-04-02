@@ -13,163 +13,244 @@
     <title>Lee's Alterations</title>
   </head>
   <body>
-    <nav class="top__navbar">
-      <div class="top__nav-container">
-        <div class="nav-logo-box pl-1">
-          <a href="#header"><img
-          src="./assets/images/cropped-logo-1.png"
-          alt="Logo picture of Lee's alterations"
-          class="logo"
-        /></a>
-        </div>
-        <div class="top__nav-box text-right pr-1">
-          <ul class="top__nav-list">
-            <li class="nav-list-item link--active"><a href="#header" > Home</a></li>
-            <li class="nav-list-item"><a href="#section-about" class="nav-link"> About</a></li>
-            <li class="nav-list-item"><a href="#section-services" class="nav-link"> Services</a></li>
-            <li class="nav-list-item"><a href="#section-gallery" class="nav-link"> Gallery</a></li>
-            <li class="nav-list-item"><a href="#section-locations" class="nav-link"> Locations</a></li>
-            <li class="nav-list-item"><a href="#section-contact" class="nav-link"> Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="nav__container">
+      <nav class="nav">
+        <!-- Sidebar Menu -->
+        <ul class="sidebar">
+          <li id="sidebar__hide-btn">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26px"
+                viewBox="0 -960 960 960"
+                width="26px"
+                fill="#ffffff"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-list-item link--active">
+            <a href="#header"> Home</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#section-about" class="nav-link"> About</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#section-services" class="nav-link"> Services</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#section-gallery" class="nav-link"> Gallery</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#section-locations" class="nav-link"> Locations</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#section-contact" class="nav-link"> Contact</a>
+          </li>
+        </ul>
+
+        <!-- Top Navbar -->
+        <ul class="topbar">
+          <li>
+            <a href="#header">
+              <img
+                src="./assets/images/cropped-logo-1.png"
+                alt="Logo picture of Lee's alterations"
+                class="logo"
+            /></a>
+          </li>
+          <li class="nav-list-item on-mobile--hide">
+            <a href="#header"> Home</a>
+          </li>
+          <li class="nav-list-item on-mobile--hide">
+            <a href="#section-about" class="nav-link"> About</a>
+          </li>
+          <li class="nav-list-item on-mobile--hide">
+            <a href="#section-services" class="nav-link"> Services</a>
+          </li>
+          <li class="nav-list-item on-mobile--hide">
+            <a href="#section-gallery" class="nav-link"> Gallery</a>
+          </li>
+          <li class="nav-list-item on-mobile--hide">
+            <a href="#section-locations" class="nav-link"> Locations</a>
+          </li>
+          <li class="nav-list-item on-mobile--hide">
+            <a href="#section-contact" class="nav-link"> Contact</a>
+          </li>
+          <li id="sidebar__show-btn">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26px"
+                viewBox="0 -960 960 960"
+                width="26px"
+                fill="#ffffff"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header" id="header">
-        <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
-                  <source src="./assets/videos/jax_3840x2160.mp4" type="video/mp4">
-                  <!-- <source src="./assets/images/video.webm" type="video/webm"> -->
-                </video>
-          </video>
+      <div class="header__text-box pl-1 pr-1 pb-2 text-center">
+        <h1 class="heading--primary text-white pb-1 pt-2">Lee's Alterations</h1>
+        <h2 class="heading--secondary text-white pb-1">
+          We serve in multiple areas throughout Jacksonville, Florida.
+        </h2>
+        <div class="header__image-box">
+          <img src="./assets/images/nedle.png" alt="image of nedle" />
+          <img src="./assets/images/sewing-machine.png" alt="" />
+          <img src="./assets/images/scisor.png" alt="" />
         </div>
-        
-        <div class="header__text-box pl-1 pr-1 pb-2 text-center">
-             <h1 class="heading--primary text-white pb-1 pt-2">Lee's Alterations</h1>
-             <h2 class="heading--secondary text-white pb-1">We serve in multiple areas throughout Jacksonville, Florida.</h2>
-             <div class="header__image-box">
-              <img src="./assets/images/nedle.png" alt="image of nedle">
-              <img src="./assets/images/sewing-machine.png" alt="">
-              <img src="./assets/images/scisor.png" alt="">
-             </div>
-             
-              <button class="btn what-we-can-do__btn mt-4">What We Can Do</button>
-        </div>
-      
+
+        <button class="btn what-we-can-do__btn text-white mt-2">
+          What We Can Do
+        </button>
+      </div>
     </header>
     <main class="container">
+      <!-- SERVICES SECTION -->
+      <section
+        id="section-services"
+        class="section-services pl-1 pr-1 pt-4 pb-4 text-center"
+      >
+        <h1 class="heading--primary mb-2 text-black">Services</h1>
+        <h2 class="heading--secondary pb-2 text-black">
+          You name it, we make it.
+        </h2>
 
-        <!-- SERVICES SECTION -->
-        <section id="section-services" class="section-services pl-1 pr-1 pt-4 pb-4 text-center">
-          <h1 class="heading--primary mb-2 text-black">Services</h1>
-          <h2 class="heading--secondary pb-2 text-black">You name it, we make it.</h2>
-          
-          <div class="card-container">
-            <div class="card  text-black">
-              <div class="picture picture-1"></div>
-              <div class="card-text-box">
-                <h3 class="card-heading">Alterations</h3>
-                <p class="card-text"> We are experienced fabric tailoring and clothing alteration specialist. For decades we have serviced our loyal customer base in Jacksonville and San Pablo at our various locations. We specialize in custom clothing alteration, dressmaking, bedding, tailoring and more.</p>
-
-              </div>
-            </div>
-            
-            <div class="card text-black">
-              <div class="picture picture-2"></div>
-              <div class="card-text-box">
-                <h3 class="card-heading">Bridal Dress</h3>
-                <p class="card-text"> We are experienced fabric tailoring and clothing alteration specialist. For decades we have serviced our loyal customer base in Jacksonville and San Pablo at our various locations. We specialize in custom clothing alteration, dressmaking, bedding, tailoring and more.</p>
-
-              </div>
-            </div>
-
-            <div class="card text-black">
-             <div class="picture picture-3"></div>
-              <div class="card-text-box">
-                <h3 class="card-heading">Custom Clothing</h3>
-                <p class="card-text"> We are experienced fabric tailoring and clothing alteration specialist. For decades we have serviced our loyal customer base in Jacksonville and San Pablo at our various locations. We specialize in custom clothing alteration, dressmaking, bedding, tailoring and more.</p>
-
-              </div>
-            </div>
-            
-            <div class="card text-black">
-              <div class="picture picture-4"></div>
-               <div class="card-text-box">
-                 <h3 class="card-heading">Bedding</h3>
-                 <p class="card-text"> We are experienced fabric tailoring and clothing alteration specialist. For decades we have serviced our loyal customer base in Jacksonville and San Pablo at our various locations. We specialize in custom clothing alteration, dressmaking, bedding, tailoring and more.</p>
- 
-               </div>
-             </div>
-          </div>
-        </section>
-
-        <!-- GALERIES SECTION -->
-        <section id="section-gallery" class="section-gallery pl-1 pr-1 pt-4 pb-4 text-center">
-          <h1 class="heading--primary pb-2">Galleries</h1>
-          <h2 class="heading-text--primary pb-2">Our Works</h2>
-          <div class="gallery-container pb-4">
-
-            <div id="gallery">
-
-            </div>
-            <div id="modal-popup">
-              <img id="selectedImg" src="" alt="">
-            </div>
-
-          </div>
-        </section>
-
-        <!-- LOCATIONS SECTION -->
-        <section id="section-locations" class="section-locations pl-1 pr-1 pt-4 pb-4 text-center">
-          <h2 class="heading--primary mb-2">Locations</h2>
-          <div class="locations__container">
-            <div id="location-list" class="locations__list-view text-white mb-1">
-              <!-- dynamic content injected from script -->
-            </div>
-
-            <div class="location__map-view">
-              <div id="map-container" class="map">
-               <!-- injecting dynamic contents -->
-              </div>              
+        <div class="card-container">
+          <div class="card text-black">
+            <div class="picture picture-1"></div>
+            <div class="card-text-box">
+              <h3 class="card-heading">Alterations</h3>
+              <p class="card-text">
+                We are experienced fabric tailoring and clothing alteration
+                specialist. For decades we have serviced our loyal customer base
+                in Jacksonville and San Pablo at our various locations. We
+                specialize in custom clothing alteration, dressmaking, bedding,
+                tailoring and more.
+              </p>
             </div>
           </div>
-        </section>
 
-        <!-- CONTACT SECTION -->
-        <section id="section-contact" class="section-contact pl-1 pr-1 pt-4 pb-4 text-center">
-          <h2 class="heading--primary">Contact</h2>
-          <div class="contact__form">
-            <form action="#">
-              <div class="form-input-group">
-                <label for="first-name" class="form-input-label"
-                  >First Name</label
-                >
-                <input type="text" id="first-name" class="form-input" />
-              </div>
-              <div class="form-input-group">
-                <label for="last-name" class="form-input-label"
-                  >Last Name</label
-                >
-                <input type="text" id="last-name" class="form-input" />
-              </div>
-              <div class="form-input-group">
-                <label for="email" class="form-input-label">Email</label>
-                <input type="text" id="email" class="form-input" />
-              </div>
-              <div class="form-input-group">
-                <label for="phone" class="form-input-label">Phone Number</label>
-                <input type="text" id="phone" class="form-input" />
-              </div>
-              <input type="text" class="contact__input-group" />
-            </form>
+          <div class="card text-black">
+            <div class="picture picture-2"></div>
+            <div class="card-text-box">
+              <h3 class="card-heading">Bridal Dress</h3>
+              <p class="card-text">
+                We are experienced fabric tailoring and clothing alteration
+                specialist. For decades we have serviced our loyal customer base
+                in Jacksonville and San Pablo at our various locations. We
+                specialize in custom clothing alteration, dressmaking, bedding,
+                tailoring and more.
+              </p>
+            </div>
           </div>
-        </section>
 
+          <div class="card text-black">
+            <div class="picture picture-3"></div>
+            <div class="card-text-box">
+              <h3 class="card-heading">Custom Clothing</h3>
+              <p class="card-text">
+                We are experienced fabric tailoring and clothing alteration
+                specialist. For decades we have serviced our loyal customer base
+                in Jacksonville and San Pablo at our various locations. We
+                specialize in custom clothing alteration, dressmaking, bedding,
+                tailoring and more.
+              </p>
+            </div>
+          </div>
+
+          <div class="card text-black">
+            <div class="picture picture-4"></div>
+            <div class="card-text-box">
+              <h3 class="card-heading">Bedding</h3>
+              <p class="card-text">
+                We are experienced fabric tailoring and clothing alteration
+                specialist. For decades we have serviced our loyal customer base
+                in Jacksonville and San Pablo at our various locations. We
+                specialize in custom clothing alteration, dressmaking, bedding,
+                tailoring and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIES SECTION -->
+      <section
+        id="section-gallery"
+        class="section-gallery pl-1 pr-1 pt-4 pb-4 text-center"
+      >
+        <h1 class="heading--primary pb-2">Galleries</h1>
+        <h2 class="heading-text--primary pb-2">Our Works</h2>
+        <div class="gallery-container pb-4">
+          <div id="gallery"></div>
+          <div id="modal-popup">
+            <img id="selectedImg" src="" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATIONS SECTION -->
+      <section
+        id="section-locations"
+        class="section-locations pl-1 pr-1 pt-4 pb-4 text-center"
+      >
+        <h2 class="heading--primary mb-2">Locations</h2>
+        <div class="locations__container">
+          <div id="location-list" class="locations__list-view text-white mb-1">
+            <!-- dynamic content injected from script -->
+          </div>
+
+          <div class="location__map-view">
+            <div id="map-container" class="map">
+              <!-- injecting dynamic contents -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section
+        id="section-contact"
+        class="section-contact pl-1 pr-1 pt-4 pb-4 text-center"
+      >
+        <h2 class="heading--primary">Contact</h2>
+        <div class="contact__form">
+          <form action="#">
+            <div class="form-input-group">
+              <label for="first-name" class="form-input-label"
+                >First Name</label
+              >
+              <input type="text" id="first-name" class="form-input" />
+            </div>
+            <div class="form-input-group">
+              <label for="last-name" class="form-input-label">Last Name</label>
+              <input type="text" id="last-name" class="form-input" />
+            </div>
+            <div class="form-input-group">
+              <label for="email" class="form-input-label">Email</label>
+              <input type="text" id="email" class="form-input" />
+            </div>
+            <div class="form-input-group">
+              <label for="phone" class="form-input-label">Phone Number</label>
+              <input type="text" id="phone" class="form-input" />
+            </div>
+            <input type="text" class="contact__input-group" />
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer pl-1 pr-1 pt-2 text-white text-center">
-      footer
-  
-  </footer>
+    <footer class="footer pl-1 pr-1 pt-2 text-white text-center">footer</footer>
 
     <script src="./scripts/data.js" type="module"></script>
     <script src="./scripts/app.js" type="module"></script>

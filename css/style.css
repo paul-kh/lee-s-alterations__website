@@ -1,7 +1,7 @@
 *,
 ::after,
 ::before {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: inherit; }
 
@@ -133,63 +133,120 @@ body {
   margin-top: 4rem; }
 
 .container {
-  max-width: 160rem; }
+  max-width: 120rem;
+  margin: 0 auto; }
 
-.top__navbar {
+.nav__container {
   background-color: #282828;
-  min-height: 3.5vh;
   position: sticky;
   top: 0;
-  z-index: 9999; }
-  .top__navbar .top__nav-container {
-    max-width: 85rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .top__navbar .top__nav-container .nav-logo-box .logo {
-      height: 2.7rem; }
-    .top__navbar .top__nav-container ul {
-      list-style: none;
-      text-transform: uppercase;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .top__navbar .top__nav-container ul > :last-child {
-        padding-right: 0px; }
-    .top__navbar .top__nav-container ul li {
-      margin-left: 1rem;
-      min-height: 3.5vh;
-      border-radius: 2px;
-      width: 5rem;
-      margin: 0.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .top__navbar .top__nav-container a {
-      color: #ffffff;
-      text-decoration: none; }
-    .top__navbar .top__nav-container ul li:hover,
-    .top__navbar .top__nav-container .link--active {
-      background-color: #9b51e0; }
-  .top__navbar > * {
-    flex-grow: 1; }
+  z-index: 999;
+  display: flex;
+  justify-content: center; }
+
+.nav {
+  width: 85rem;
+  min-height: 3.5vh;
+  padding: 4px 0;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.nav .topbar {
+  list-style: none;
+  display: flex;
+  min-width: 100%; }
+
+.nav ul li {
+  width: 7rem;
+  height: 3.5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 1rem; }
+
+.nav ul li a {
+  text-decoration: none;
+  height: 90%;
+  color: #ffffff;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.nav ul li a:hover,
+.link--active {
+  background-color: #9b51e0;
+  transform: translateY(-2px);
+  transition: 250ms transform;
+  box-shadow: 2px 2px 2px #f7dede; }
+
+.nav ul li a img {
+  max-height: 2.7rem;
+  margin-left: 35px; }
+
+.nav ul li:first-child {
+  margin-right: auto;
+  background-color: transparent; }
+
+.nav ul li:first-child a:hover {
+  background-color: transparent;
+  box-shadow: 0 0 0 transparent; }
+
+.nav .sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 25rem;
+  z-index: 9999;
+  background-color: rgba(40, 40, 40, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px #282828;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; }
+
+.sidebar li {
+  min-width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sidebar li:first-child a {
+  background-color: transparent; }
+
+.topbar img:hover,
+.sidebar img:hover {
+  transform: translateY(-2px);
+  transition: 250ms transform;
+  box-shadow: 4px 4px 8px #282828; }
+
+#sidebar__show-btn {
+  display: none; }
 
 .header {
   height: 95.5vh;
+  background-image: url("../assets/images/jax-downtown--large.jpg");
+  background-size: cover;
+  background-position: left;
   display: flex;
   justify-content: center;
   align-items: center; }
   .header__text-box {
     position: absolute;
-    top: 25%;
-    background-color: rgba(155, 81, 224, 0.9);
-    border-radius: 4px;
-    box-shadow: 4px 4px 10px rgba(100, 100, 100, 0.9); }
+    top: 8%; }
   .header__image-box {
     width: 100%; }
     .header__image-box img {
       height: 6rem;
       padding: 6px; }
+  .header .btn {
+    background-color: rgba(155, 81, 224, 0.9);
+    padding: 20px;
+    font-size: 1.1rem; }
 
 .section-services {
   background-color: #f6f2ef;
@@ -202,20 +259,26 @@ body {
 
 .section-galleries {
   background-color: #646464;
-  color: #ffffff; }
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .section-galleries .gallery-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
 
 #gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 10px; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
 
 .gallery-image {
-  max-width: 20rem;
-  height: 30rem;
+  max-width: 15rem;
+  height: 20rem;
+  margin: 5px;
   border-radius: 10px;
   position: relative;
   transition: 250ms;
@@ -329,3 +392,81 @@ body {
   text-align: center; }
   .bg-video__content {
     object-fit: cover; }
+
+@media (max-width: 1200px) {
+  .heading--primary {
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: capitalize; }
+  .heading--secondary {
+    font-weight: 800;
+    font-size: 1.5rem; }
+  .heading--tertiary {
+    font-weight: 500;
+    font-size: 0.8rem; }
+  .card {
+    min-width: 15rem;
+    min-height: 30rem; }
+  .card .card-text {
+    font-size: 0.8rem; }
+  .card .picture {
+    height: 15rem; }
+  .card .card-text-box {
+    padding: 1rem;
+    position: absolute;
+    top: 15rem; }
+  .gallery-image {
+    max-width: 10rem;
+    height: 10rem; }
+  .location {
+    width: 12rem; }
+    .location p {
+      font-size: 0.7rem; }
+  #map-container iframe {
+    width: 40rem;
+    height: 20rem; }
+  #map-container img {
+    border-radius: 10px;
+    max-height: 20rem; } }
+
+@media (max-width: 900px) {
+  #sidebar__show-btn {
+    display: block; }
+  .topbar .on-mobile--hide {
+    display: none; } }
+
+@media (max-width: 450px) {
+  .heading--primary {
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: capitalize; }
+  .heading--secondary {
+    font-weight: 700;
+    font-size: 1.2rem; }
+  .heading--tertiary {
+    font-weight: 500;
+    font-size: 0.8rem; }
+  .nav .sidebar {
+    width: 100%;
+    height: 140vh; }
+  .nav {
+    height: 2.5rem;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .card {
+    min-width: 100%;
+    min-height: 27rem; }
+  .gallery-image {
+    max-width: 8rem;
+    height: 8rem;
+    margin: 5px; }
+  .location {
+    width: 100%; }
+    .location p {
+      font-size: 0.7rem; }
+  #map-container iframe {
+    width: 100%;
+    height: 20rem; }
+  #map-container img {
+    border-radius: 10px;
+    width: 100%; } }

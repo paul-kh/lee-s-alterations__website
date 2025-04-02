@@ -1,8 +1,12 @@
 .section-galleries {
   background-color: $color-grey-light;
   color: $color-white-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .gallery-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,16 +14,16 @@
 }
 
 #gallery {
-  display: grid;
-  // 'auto-fit' to let items fit as many as they can, and with min of 320px
-  // and max of 1fr
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery-image {
-  max-width: 20rem;
-  height: 30rem;
+  max-width: 15rem;
+  height: 20rem;
+  margin: 5px;
   border-radius: 10px;
   position: relative;
   transition: 250ms;
