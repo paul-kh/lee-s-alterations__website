@@ -103,7 +103,7 @@ export const SERVICES = [
   },
   {
     id: "004",
-    name: "Custom Clothing and Garment Modification & Repair",
+    name: "Custom Clothing and Garment Repair",
     description:
       "In addition to the repair and restoration of existing garments, our staff is prepared to design custom men’s and women’s fashion garments, including dresses, suits and even linen and bedding. We have amassed a large portfolio of satisfied customers and would love the opportunity to service you in your time of need.",
     cardImageUrl: "./assets/images/services-images/custom-clothing.jpg",

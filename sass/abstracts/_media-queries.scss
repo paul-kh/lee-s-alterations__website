@@ -19,10 +19,10 @@
   //  Section-services
   .card {
     min-width: 20rem;
-    min-height: 30rem;
+    min-height: 35rem;
   }
   .card .card-text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .card .picture {
@@ -90,12 +90,17 @@
   }
   //  Section-services
   .card {
-    min-width: 95%;
-    min-height: 32rem;
+    min-width: 20rem;
+    min-height: 35rem;
+  }
+
+  .card-heading {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 
   .card .card-text {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .card .picture {
@@ -152,6 +157,31 @@
     height: 2.5rem;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  //  Section-services
+  .card {
+    min-width: 19rem;
+    min-height: 37rem;
+  }
+
+  .card-heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .card .picture {
+    height: 15rem;
+  }
+
+  .card .card-text-box {
+    padding: 1rem;
+    position: absolute;
+    top: 15rem;
   }
 
   //  Section-galleries

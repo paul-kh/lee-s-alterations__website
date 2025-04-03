@@ -267,6 +267,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .section-services h3 {
+    font-size: 1rem;
+    font-weight: 400; }
   .section-services .card-container {
     display: flex;
     flex-wrap: no-wrap;
@@ -494,6 +497,9 @@ body {
     padding: 1rem;
     position: absolute;
     top: 23rem; }
+  .card .card-heading {
+    font-size: 1.2rem;
+    font-weight: 700; }
   .card .card-text {
     font-size: 1rem; }
   .card .picture {
@@ -641,9 +647,9 @@ body {
     font-size: 0.8rem; }
   .card {
     min-width: 20rem;
-    min-height: 30rem; }
+    min-height: 35rem; }
   .card .card-text {
-    font-size: 0.8rem; }
+    font-size: 0.9rem; }
   .card .picture {
     height: 15rem; }
   .card .card-text-box {
@@ -682,10 +688,13 @@ body {
   .header__text-box a {
     margin: 4px; }
   .card {
-    min-width: 95%;
-    min-height: 32rem; }
+    min-width: 20rem;
+    min-height: 35rem; }
+  .card-heading {
+    font-size: 1.2rem;
+    font-weight: 700; }
   .card .card-text {
-    font-size: 0.8rem; }
+    font-size: 0.9rem; }
   .card .picture {
     height: 15rem; }
   .card .card-text-box {
@@ -721,6 +730,20 @@ body {
     height: 2.5rem;
     padding-top: 5px;
     padding-bottom: 5px; }
+  .card {
+    min-width: 19rem;
+    min-height: 37rem; }
+  .card-heading {
+    font-size: 1.2rem;
+    font-weight: 700; }
+  .card .card-text {
+    font-size: 0.9rem; }
+  .card .picture {
+    height: 15rem; }
+  .card .card-text-box {
+    padding: 1rem;
+    position: absolute;
+    top: 15rem; }
   .gallery-image {
     max-width: 8rem;
     height: 8rem;
