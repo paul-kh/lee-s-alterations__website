@@ -32,7 +32,7 @@
               </svg>
             </a>
           </li>
-          <li class="nav-list-item link--active">
+          <li class="nav-list-item">
             <a href="#header"> Home</a>
           </li>
           <li class="nav-list-item">
@@ -56,22 +56,23 @@
               <img
                 src="./assets/images/cropped-logo-1.png"
                 alt="Logo picture of Lee's alterations"
-                class="logo"
+                class="logo nav-list-item"
+                id="logo-img"
             /></a>
           </li>
-          <li class="nav-list-item on-mobile--hide">
+          <li class="nav-list-item on-mobile--hide link--active home">
             <a href="#header"> Home</a>
           </li>
-          <li class="nav-list-item on-mobile--hide">
+          <li class="nav-list-item on-mobile--hide services">
             <a href="#section-services" class="nav-link"> Services</a>
           </li>
-          <li class="nav-list-item on-mobile--hide">
+          <li class="nav-list-item on-mobile--hide works">
             <a href="#section-gallery" class="nav-link"> Gallery</a>
           </li>
-          <li class="nav-list-item on-mobile--hide">
+          <li class="nav-list-item on-mobile--hide locations">
             <a href="#section-locations" class="nav-link"> Locations</a>
           </li>
-          <li class="nav-list-item on-mobile--hide">
+          <li class="nav-list-item on-mobile--hide contact">
             <a href="#section-contact" class="nav-link"> Contact</a>
           </li>
           <li id="sidebar__show-btn">
@@ -105,8 +106,15 @@
 
         <a
           href="#section-services"
-          class="btn btn--purple heading--secondary mt-2"
+          class="btn btn--purple heading--secondary mt-2 m-1"
+          id="what-we-can-do-btn"
           >What We Can Do</a
+        >
+        <a
+          href="#section-locations"
+          class="btn btn--purple heading--secondary mt-2 m-1"
+          id="find-our-stores-btn-1"
+          >Find Our Stores</a
         >
       </div>
     </header>
@@ -117,7 +125,7 @@
         class="section-services pl-1 pr-1 pt-4 pb-4 text-center"
       >
         <h1 class="heading--primary mb-2 text-black">Services</h1>
-        <h2 class="heading--secondary pb-2 text-black">
+        <h2 class="heading-text--primary pb-2 text-black">
           You name it, we make it.
         </h2>
 
@@ -179,9 +187,10 @@
           </div>
         </div>
         <a
-          href="#section-locations"
+          href="#section-gallery"
           class="btn btn--purple heading--tertiary mt-2 mb-2"
-          >Find Our Stores</a
+          id="see-our-works-btn"
+          >See Our Works</a
         >
       </section>
 
@@ -190,8 +199,10 @@
         id="section-gallery"
         class="section-gallery pl-1 pr-1 pt-4 pb-4 text-center"
       >
-        <h1 class="heading--primary pb-2">Galleries</h1>
-        <h2 class="heading-text--primary pb-2">Our Works</h2>
+        <h1 class="heading--primary pb-2">Our Works</h1>
+        <h2 class="heading-text--primary pb-2">
+          Enjoy viewing our works in the photo gallary below.
+        </h2>
         <div class="gallery-container pb-4">
           <div id="gallery"></div>
           <div id="modal-popup">
@@ -201,6 +212,7 @@
         <a
           href="#section-locations"
           class="btn btn--purple heading--tertiary mt-2 mb-2"
+          id="find-our-stores-btn-2"
           >Find Our Stores</a
         >
       </section>
@@ -210,7 +222,11 @@
         id="section-locations"
         class="section-locations pl-1 pr-1 pt-4 pb-4 text-center"
       >
-        <h2 class="heading--primary mb-2">Locations</h2>
+        <h1 class="heading--primary mb-2">Locations</h1>
+        <h2 class="heading-text--primary pb-2">
+          We have 5 store locations across Jacksonville, FL. <br />Click on each
+          location below to show the map and store building photo.
+        </h2>
         <div class="locations__container">
           <div id="location-list" class="locations__list-view text-white mb-1">
             <!-- dynamic content injected from script -->
@@ -225,6 +241,7 @@
         <a
           href="#section-contact"
           class="btn btn--purple heading--tertiary mt-4 mb-2"
+          id="questions-for-us-btn"
           >Questions for Us</a
         >
       </section>
@@ -234,11 +251,11 @@
         id="section-contact"
         class="section-contact pl-1 pr-1 pt-2 pb-2 mt-2 text-center"
       >
-        <h2 class="heading--primary mb-2">Contact</h2>
-        <h3 class="headering--tertiary mb-2">
-          We are more than happy to respond to your inquiry that you send to us
-          via the contact form below.
-        </h3>
+        <h1 class="heading--primary mb-2">Contact</h1>
+        <h2 class="heading-text--primary mb-2">
+          Send us your inquiries or questions you may have via the contact form
+          below.
+        </h2>
         <div class="book">
           <div class="book__form">
             <form class="form pb-2 pt-2" method="POST" id="contact-form">
@@ -286,7 +303,10 @@
             </form>
           </div>
         </div>
-        <a href="#header" class="btn btn--purple heading--tertiary mt-4 mb-2"
+        <a
+          href="#header"
+          id="contact__home-btn"
+          class="btn btn--purple heading--tertiary mt-4 mb-2 .nav-list-item"
           >Home</a
         >
       </section>

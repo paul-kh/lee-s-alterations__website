@@ -133,6 +133,18 @@ body {
 .mt-4 {
   margin-top: 4rem; }
 
+.mr-1 {
+  margin-right: 1rem; }
+
+.mr-2 {
+  margin-right: 2rem; }
+
+.ml-1 {
+  margin-left: 1rem; }
+
+.ml-2 {
+  margin-left: 2rem; }
+
 .container {
   max-width: 120rem;
   margin: 0 auto; }
@@ -291,6 +303,7 @@ body {
 
 #modal-popup {
   padding: 50px;
+  padding-top: 5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -493,7 +506,7 @@ body {
   margin-bottom: 0; }
 
 .form__input {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: inherit;
   color: inherit;
   padding: 1.2rem 1.8rem;
@@ -643,6 +656,16 @@ body {
     max-height: 20rem; } }
 
 @media (max-width: 900px) {
+  .heading--primary {
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: capitalize; }
+  .heading--secondary {
+    font-weight: 600;
+    font-size: 1rem; }
+  .heading--tertiary {
+    font-weight: 500;
+    font-size: 0.8rem; }
   #sidebar__show-btn {
     display: block; }
   .topbar .on-mobile--hide {

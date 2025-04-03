@@ -102,17 +102,61 @@ storeLocationEls.forEach((el) => {
 /****** Handling Active Nav Link                  ***/
 /****************************************************/
 const linkEl = document.querySelectorAll(".nav-list-item");
-console.log(linkEl);
+const logoEl = document.getElementById("logo-img");
+const homeEl = document.querySelector(".home");
+const servciesEl = document.querySelector(".services");
+const worksEl = document.querySelector(".works");
+const locationsEl = document.querySelector(".locations");
+const contactEl = document.querySelector(".contact");
+const contactHomeBtn = document.getElementById("contact__home-btn");
+const whatWeCanDoBtn = document.getElementById("what-we-can-do-btn");
+const seeOurWorksBtn = document.getElementById("see-our-works-btn");
+const findOurStoresBtn1 = document.getElementById("find-our-stores-btn-1");
+const findOurStoresBtn2 = document.getElementById("find-our-stores-btn-2");
+const questionsForUsBtn = document.getElementById("questions-for-us-btn");
+
+console.log("HOme: ", homeEl);
 
 linkEl.forEach((link) => {
   link.addEventListener("click", () => {
     // remove previously active link
     document.querySelector(".link--active").classList.remove("link--active");
 
-    // add "link--active" class to newly selected link
-    link.classList.add("link--active");
-    document.querySelector(".sidebar").style.display = "none";
+    if (link === logoEl) {
+      homeEl.classList.add("link--active");
+      console.log("HOme: ", homeEl);
+    } else {
+      // add "link--active" class to newly selected link
+      link.classList.add("link--active");
+      document.querySelector(".sidebar").style.display = "none";
+    }
   });
+});
+
+// WHEN USER CLICK ACTION BUTTONS
+//////////////////////////////////////////////////////////////////////////////
+function addActiveLink(el) {
+  // remove previously active link
+  document.querySelector(".link--active").classList.remove("link--active");
+  el.classList.add("link--active");
+}
+contactHomeBtn.addEventListener("click", () => {
+  addActiveLink(homeEl);
+});
+whatWeCanDoBtn.addEventListener("click", () => {
+  addActiveLink(servciesEl);
+});
+seeOurWorksBtn.addEventListener("click", () => {
+  addActiveLink(worksEl);
+});
+findOurStoresBtn1.addEventListener("click", () => {
+  addActiveLink(locationsEl);
+});
+findOurStoresBtn2.addEventListener("click", () => {
+  addActiveLink(locationsEl);
+});
+questionsForUsBtn.addEventListener("click", () => {
+  addActiveLink(contactEl);
 });
 
 /****************************************************/
