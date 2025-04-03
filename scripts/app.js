@@ -170,3 +170,7 @@ sidebarShowBtn.addEventListener("click", () => {
 sidebarHideBtn.addEventListener("click", () => {
   document.querySelector(".sidebar").style.display = "none";
 });
+
+// Copy Right Year in Footer
+///////////////////////////////////////////////////////////////////////
+document.getElementById("year").textContent = new Date().getFullYear();

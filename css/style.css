@@ -310,6 +310,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: #282828;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,9 +379,21 @@ body {
           padding: 2rem; } }
 
 .footer {
-  height: 10vh;
   background-color: #282828;
-  color: #ffffff; }
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.footer__tex-box {
+  position: absolute;
+  top: 65%;
+  text-align: center; }
 
 .btn {
   /* Use pseudo element 'after' to create a child element of btn */ }

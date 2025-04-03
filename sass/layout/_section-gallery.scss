@@ -47,6 +47,7 @@
   right: 0;
   bottom: 0;
   background-color: $color-black;
+  z-index: 999;
 
   // center image in the modal
   display: flex;

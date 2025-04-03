@@ -1,5 +1,19 @@
 .footer {
-  height: $footer-height;
   background-color: $color-black;
-  color: $color-white-light;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__tex-box {
+  position: absolute;
+  top: 65%;
+  text-align: center;
 }
