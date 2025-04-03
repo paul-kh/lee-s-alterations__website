@@ -96,9 +96,9 @@ export const SERVICES = [
   },
   {
     id: "003",
-    name: "Dress Making",
+    name: "Dressmaking",
     description:
-      "For decades we have serviced our loyal customer base in Jacksonville and San Pablo at our various locations. We specialize in dressmaking, custom clothing alteration, bedding, tailoring and more. Customers from all over Jacksonville come to our Professional tailoring studio for making dresses to fit their requirements.",
+      "For decades we have serviced our loyal customer base in Jacksonville and San Pablo at our various locations. We specialize in dressmaking, custom clothing alteration, bedding, tailoring and more. Customers from all over Jacksonville come to our professional tailoring studio for making dresses to fit their requirements.",
     cardImageUrl: "./assets/images/services-images/dress-making.jpg",
   },
   {
