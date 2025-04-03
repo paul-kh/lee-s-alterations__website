@@ -263,12 +263,16 @@ body {
 
 .section-services {
   background-color: #f6f2ef;
-  color: #ffffff; }
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .section-services .card-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 4rem; }
+    flex-wrap: no-wrap;
+    overflow: auto;
+    width: 90%;
+    scroll-behavior: auto; }
 
 .section-galleries {
   background-color: #646464;
@@ -472,7 +476,7 @@ body {
   transform: translateY(0); }
 
 .card {
-  min-width: 20rem;
+  min-width: 25rem;
   min-height: 41rem;
   margin: 1rem;
   background-color: #ffffff;
@@ -495,14 +499,6 @@ body {
   .card .picture {
     height: 23rem;
     background-size: cover; }
-    .card .picture-1 {
-      background-image: url(../assets/images/measuring-2923809_1280.jpg); }
-    .card .picture-2 {
-      background-image: url(../assets/images/bridal.jpg); }
-    .card .picture-3 {
-      background-image: url(../assets/images/blazer.jpg); }
-    .card .picture-4 {
-      background-image: url(../assets/images/bedding.jpg); }
 
 .bg-video {
   position: absolute;
@@ -685,6 +681,17 @@ body {
     display: none; }
   .header__text-box a {
     margin: 4px; }
+  .card {
+    min-width: 95%;
+    min-height: 32rem; }
+  .card .card-text {
+    font-size: 0.8rem; }
+  .card .picture {
+    height: 15rem; }
+  .card .card-text-box {
+    padding: 1rem;
+    position: absolute;
+    top: 15rem; }
   .location {
     width: 100%; }
     .location p {
@@ -714,9 +721,6 @@ body {
     height: 2.5rem;
     padding-top: 5px;
     padding-bottom: 5px; }
-  .card {
-    min-width: 100%;
-    min-height: 27rem; }
   .gallery-image {
     max-width: 8rem;
     height: 8rem;

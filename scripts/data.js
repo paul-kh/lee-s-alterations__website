@@ -48,64 +48,71 @@ export const STORE__LOCATIONS = [
 
 export const GALLERY__IMAGES = [
   {
-    src: "",
+    id: "001",
+    src: "../assets/images/gallery/gallery-1.jpg",
     alt: "",
   },
   {
-    src: "",
+    id: "002",
+    src: "../assets/images/gallery/gallery-2.jpg",
     alt: "",
   },
   {
-    src: "",
+    id: "003",
+    src: "../assets/images/gallery/gallery-3.jpg",
     alt: "",
   },
   {
-    src: "",
+    id: "004",
+    src: "../assets/images/gallery/gallery-4.jpg",
     alt: "",
   },
   {
-    src: "",
+    id: "005",
+    src: "../assets/images/gallery/gallery-5.jpg",
     alt: "",
   },
   {
-    src: "",
-    alt: "",
-  },
-  {
-    src: "",
+    id: "006",
+    src: "../assets/images/gallery/gallery-6.jpg",
     alt: "",
   },
 ];
 
 export const SERVICES = [
   {
-    name: "",
-    description: "",
-    cardImageUrl: "",
+    id: "001",
+    name: "Cloth Alterations",
+    description:
+      "Our staff are experienced alteration experts. When you need to resize any existing standard or specialty or bridal  or other cloth, our team is ready and willing to assist. Our clothing alteration and repair services have become an industry staple in Jacksonville and San Pablo over the years",
+    cardImageUrl: "../assets/images/services-images/alterations.jpg",
   },
   {
-    name: "",
-    description: "",
-    cardImageUrl: "",
+    id: "002",
+    name: "Bridal Alterations",
+    description:
+      "From stitching to measuring to repairing, we do it all. Some of the responsibilities and duties that we undertake in this capacity include altering clothing to fit your requirements, repairing garments with defects, removing stitching as needed, resewing for custom fit.",
+    cardImageUrl: "../assets/images/services-images/bridal.jpg",
   },
   {
-    name: "",
-    description: "",
-    cardImageUrl: "",
+    id: "003",
+    name: "Dress Making",
+    description:
+      "For decades we have serviced our loyal customer base in Jacksonville and San Pablo at our various locations. We specialize in dressmaking, custom clothing alteration, bedding, tailoring and more. Customers from all over Jacksonville come to our Professional tailoring studio for making dresses to fit their requirements.",
+    cardImageUrl: "../assets/images/services-images/dress-making.jpg",
   },
   {
-    name: "",
-    description: "",
-    cardImageUrl: "",
+    id: "004",
+    name: "Custom Clothing and Garment Modification & Repair",
+    description:
+      "In addition to the repair and restoration of existing garments, our staff is prepared to design custom men’s and women’s fashion garments, including dresses, suits and even linen and bedding. We have amassed a large portfolio of satisfied customers and would love the opportunity to service you in your time of need.",
+    cardImageUrl: "../assets/images/services-images/custom-clothing.jpg",
   },
   {
-    name: "",
-    description: "",
-    cardImageUrl: "",
-  },
-  {
-    name: "",
-    description: "",
-    cardImageUrl: "",
+    id: "005",
+    name: "Bedding",
+    description:
+      "We are experienced fabric-tailoring and clothing-alteration specialist. We also specialize in bedding and beyond.",
+    cardImageUrl: "../assets/images/services-images/bedding.jpg",
   },
 ];

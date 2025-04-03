@@ -7,13 +7,10 @@ const galleryEl = document.getElementById("gallery");
 const modalPopup = document.getElementById("modal-popup");
 const selectedImg = document.getElementById("selectedImg");
 
-const imageIndexes = [1, 2, 3, 4, 5];
-const selectedIndex = null;
-
-imageIndexes.forEach((i) => {
+GALLERY__IMAGES.forEach((imgObj) => {
   const img = document.createElement("img");
-  img.src = `./assets/images/gallery/gallery-${i}.jpg`;
-  img.alt = `Image of gallery picture ${i}`;
+  img.src = imgObj.src;
+  img.alt = `Image of gallery picture ${imgObj.id}`;
   img.classList.add("gallery-image");
 
   // add each image to gallery
@@ -25,8 +22,8 @@ imageIndexes.forEach((i) => {
     modalPopup.style.transform = "translateY(0)";
 
     // show selected image in the modal
-    selectedImg.src = `./assets/images/gallery/gallery-${i}.jpg`;
-    selectedImg.alt = `Image of gallery picture ${i}`;
+    selectedImg.src = imgObj.src;
+    selectedImg.alt = `Image of gallery picture ${imgObj.id}`;
   });
 });
 
@@ -39,6 +36,59 @@ modalPopup.addEventListener("click", () => {
   // reset source and alt of selected image
   selectedImg.src = "";
   selectedImg.alt = "";
+});
+
+/**************************************************/
+/****** Loading Services for Services Section   ***/
+/**************************************************/
+
+{
+  /* <div class="card-container" id="service__card-container"> 
+        <div class="card text-black">
+            <div class="picture picture-1"></div>
+            <div class="card-text-box">
+                    <h3 class="card-heading">Alterations</h3>
+                    <p class="card-text">
+                      We are experienced fabric tailoring and clothing alteration
+                      specialist. For decades we have serviced our loyal customer base
+                      in Jacksonville and San Pablo at our various locations. We
+                      specialize in custom clothing alteration, dressmaking, bedding,
+                      tailoring and more.
+                    </p>
+            </div>
+        </div> 
+    </div>        
+*/
+}
+
+const serviceCardContainerEl = document.getElementById(
+  "service__card-container"
+);
+SERVICES.forEach((service) => {
+  // Create service card element
+  const serviceCardEl = document.createElement("div");
+  serviceCardEl.classList.add("card");
+  serviceCardEl.classList.add("text-black");
+
+  // Create Service Card Background Image Element
+  const cardBgImage = document.createElement("div");
+  cardBgImage.classList.add("picture");
+  cardBgImage.style.backgroundImage = `url(${service.cardImageUrl})`;
+
+  // Create Service Card Textbox Element
+  const cardTextBox = document.createElement("div");
+  cardTextBox.classList.add("card-text-box");
+  cardTextBox.innerHTML = `
+              <h3 class="card-heading pb-1 pt-1">${service.name}</h3>
+              <p class="card-text">
+                ${service.description}
+              </p>
+  `;
+
+  // Nest elements
+  serviceCardEl.appendChild(cardBgImage);
+  serviceCardEl.appendChild(cardTextBox);
+  serviceCardContainerEl.appendChild(serviceCardEl);
 });
 
 /****************************************************/
@@ -115,8 +165,6 @@ const findOurStoresBtn1 = document.getElementById("find-our-stores-btn-1");
 const findOurStoresBtn2 = document.getElementById("find-our-stores-btn-2");
 const questionsForUsBtn = document.getElementById("questions-for-us-btn");
 
-console.log("HOme: ", homeEl);
-
 linkEl.forEach((link) => {
   link.addEventListener("click", () => {
     // remove previously active link
@@ -124,7 +172,6 @@ linkEl.forEach((link) => {
 
     if (link === logoEl) {
       homeEl.classList.add("link--active");
-      console.log("HOme: ", homeEl);
     } else {
       // add "link--active" class to newly selected link
       link.classList.add("link--active");

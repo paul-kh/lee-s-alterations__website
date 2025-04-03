@@ -1,5 +1,5 @@
 .card {
-  min-width: 20rem;
+  min-width: 25rem;
   min-height: 41rem;
   margin: 1rem;
   background-color: $color-white-light;
@@ -29,18 +29,5 @@
   .picture {
     height: 23rem;
     background-size: cover;
-
-    &-1 {
-      background-image: url(../assets/images/measuring-2923809_1280.jpg);
-    }
-    &-2 {
-      background-image: url(../assets/images/bridal.jpg);
-    }
-    &-3 {
-      background-image: url(../assets/images/blazer.jpg);
-    }
-    &-4 {
-      background-image: url(../assets/images/bedding.jpg);
-    }
   }
 }

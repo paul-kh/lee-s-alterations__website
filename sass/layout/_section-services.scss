@@ -1,11 +1,15 @@
 .section-services {
   background-color: $color-white-dark;
   color: $color-white-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .card-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 4rem;
+    flex-wrap: no-wrap;
+    overflow: auto;
+    width: 90%;
+    scroll-behavior: auto;
   }
 }
