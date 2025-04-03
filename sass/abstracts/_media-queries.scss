@@ -83,6 +83,11 @@
   .topbar .on-mobile--hide {
     display: none;
   }
+
+  // Header
+  .header__text-box a {
+    margin: 4px;
+  }
   // Section Locations
   .location {
     width: 100%;

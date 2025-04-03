@@ -683,6 +683,8 @@ body {
     display: block; }
   .topbar .on-mobile--hide {
     display: none; }
+  .header__text-box a {
+    margin: 4px; }
   .location {
     width: 100%; }
     .location p {
