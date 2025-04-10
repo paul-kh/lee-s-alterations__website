@@ -130,6 +130,16 @@
     border-radius: 10px;
     min-height: 35rem;
   }
+
+  .thankyou__modal {
+    .modal__dialog-box {
+      height: 20rem;
+      width: 90%;
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: $color-white-light;
+    }
+  }
 }
 
 @media (max-width: 450px) {
@@ -207,5 +217,14 @@
   #map-container img {
     border-radius: 10px;
     width: 100%;
+  }
+  .thankyou__modal {
+    .modal__dialog-box {
+      height: 20rem;
+      width: 90%;
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: $color-white-light;
+    }
   }
 }
